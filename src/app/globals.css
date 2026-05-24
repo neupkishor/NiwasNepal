@@ -34,7 +34,6 @@
 
 html,
 body {
-  background: var(--surface);
   min-height: 100%;
 }
 
@@ -49,9 +48,6 @@ body {
   font-family: var(--font-lora), Lora, Georgia, serif;
 }
 
-header {
-  background: var(--background);
-}
 
 a {
   color: inherit;
