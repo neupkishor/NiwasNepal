@@ -7,6 +7,7 @@ type Testimonial = {
   name: string;
   role: string;
   review: string;
+  photo: string;
 };
 
 export default function TestimonialsCarousel({ testimonials }: { testimonials: Testimonial[] }) {
@@ -97,8 +98,17 @@ export default function TestimonialsCarousel({ testimonials }: { testimonials: T
       {testimonials.map((item) => (
         <article key={item.name} className="card min-w-[86%] snap-center p-6 md:min-w-0">
           <p className="text-[15px] leading-7 text-[color:var(--muted)]">“{item.review}”</p>
-          <p className="mt-5 font-serif text-xl">{item.name}</p>
-          <p className="text-sm text-[color:var(--muted)]">{item.role}</p>
+          <div className="mt-5 flex items-center gap-3">
+            <img
+              src={item.photo}
+              alt={`${item.name} photo`}
+              className="h-12 w-12 rounded-full border border-[color:var(--line)] object-cover"
+            />
+            <div>
+              <p className="font-serif text-xl">{item.name}</p>
+              <p className="text-sm text-[color:var(--muted)]">{item.role}</p>
+            </div>
+          </div>
         </article>
       ))}
     </div>

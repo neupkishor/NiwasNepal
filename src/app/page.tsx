@@ -36,18 +36,21 @@ const testimonials = [
   {
     name: "Suman KC",
     role: "Home Buyer, Kalanki",
+    photo: "/reviewers/suman-kc.svg",
     review:
       "Niwas Nepal helped us shortlist and close a family home in Kalanki within two weeks. Their local guidance was excellent.",
   },
   {
     name: "Ritika Shrestha",
     role: "Property Investor",
+    photo: "/reviewers/ritika-shrestha.svg",
     review:
       "Very transparent process from inspection to paperwork. I now have two rental units with reliable monthly returns.",
   },
   {
     name: "Prakash Thapa",
     role: "Seller, Kathmandu",
+    photo: "/reviewers/prakash-thapa.svg",
     review:
       "The team positioned my property well, brought qualified buyers, and negotiated a better price than expected.",
   },
@@ -66,8 +69,8 @@ export default function Home() {
   return (
     <div>
       <section className="page-pad bg-[color:var(--section-color-1)] pb-12">
-        <div className="container grid gap-8 lg:grid-cols-[1.12fr_0.88fr]">
-          <div>
+        <div className="container">
+          <div className="max-w-4xl">
             <p className="section-kicker">Kalanki Focused Real Estate</p>
             <h1 className="section-title text-[clamp(2.4rem,5vw,4.3rem)]">
               Buy, Sell, Or Invest In
@@ -76,6 +79,38 @@ export default function Home() {
             <p className="section-copy mt-5">
               Discover verified listings, local price guidance, and fast support from a team that specializes in Kalanki and nearby Kathmandu areas.
             </p>
+
+            <form className="mt-7">
+              <label htmlFor="hero-search" className="sr-only">
+                Search properties
+              </label>
+              <div className="relative">
+                <input
+                  id="hero-search"
+                  className="input h-13 rounded-full border-[#d8cdb9] bg-white pl-5 pr-20 shadow-[0_6px_18px_rgba(25,22,18,0.08)]"
+                  placeholder="Search by location, property type, or budget"
+                  defaultValue="Kalanki"
+                />
+                <button
+                  type="submit"
+                  aria-label="Search properties"
+                  className="absolute inset-y-0.5 right-0.5 inline-flex w-14 items-center justify-center rounded-r-full rounded-l-[999px] border-l border-white/35 bg-[color:var(--brand)] text-white transition-colors hover:bg-[color:var(--brand-strong)]"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="h-[18px] w-[18px] fill-none stroke-current"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M20 20L16.5 16.5" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/properties" className="btn btn-primary">
                 View All Properties
@@ -84,29 +119,6 @@ export default function Home() {
                 Get Free Consultation
               </Link>
             </div>
-          </div>
-
-          <div className="card p-5 md:p-6">
-            <h2 className="font-serif text-2xl">Start Your Property Search</h2>
-            <p className="section-copy mt-2">Tell us what you need. We will match the best options from Kalanki first.</p>
-            <form className="mt-5 grid gap-3">
-              <input className="input" placeholder="Location (e.g. Kalanki)" defaultValue="Kalanki" />
-              <select className="input" defaultValue="House">
-                <option>House</option>
-                <option>Apartment</option>
-                <option>Land / Plot</option>
-                <option>Commercial Space</option>
-              </select>
-              <select className="input" defaultValue="NRS 1Cr - 3Cr">
-                <option>NRS 50L - 1Cr</option>
-                <option>NRS 1Cr - 3Cr</option>
-                <option>NRS 3Cr - 5Cr</option>
-                <option>NRS 5Cr+</option>
-              </select>
-              <button type="button" className="btn btn-primary mt-1">
-                Search Properties
-              </button>
-            </form>
           </div>
         </div>
       </section>

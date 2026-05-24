@@ -10,8 +10,16 @@ export default function ContactPage() {
           </p>
           <div className="mt-8 space-y-2 text-[color:var(--muted)]">
             <p>Kathmandu, Nepal</p>
-            <p>+977-1-555-0100</p>
-            <p>info@niwasnepal.com</p>
+            <p>
+              <a className="link-hover" href="tel:+97715550100">
+                +977-1-555-0100
+              </a>
+            </p>
+            <p>
+              <a className="link-hover" href="mailto:info@niwasnepal.com">
+                info@niwasnepal.com
+              </a>
+            </p>
           </div>
         </article>
 

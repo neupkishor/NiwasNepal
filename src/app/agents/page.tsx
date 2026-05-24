@@ -34,8 +34,16 @@ export default function AgentsPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[color:var(--brand)]">{agent.role}</p>
               <h2 className="mt-2 font-serif text-3xl">{agent.name}</h2>
               <div className="mt-5 space-y-1 text-[color:var(--muted)]">
-                <p>{agent.phone}</p>
-                <p>{agent.email}</p>
+                <p>
+                  <a className="link-hover" href={`tel:${agent.phone.replaceAll("-", "")}`}>
+                    {agent.phone}
+                  </a>
+                </p>
+                <p>
+                  <a className="link-hover" href={`mailto:${agent.email}`}>
+                    {agent.email}
+                  </a>
+                </p>
               </div>
             </article>
           ))}
