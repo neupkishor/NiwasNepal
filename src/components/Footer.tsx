@@ -15,10 +15,10 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--muted)]">Explore</h4>
             <div className="mt-4 flex flex-col gap-2 text-[15px]">
-              <Link href="/properties" className="hover:text-[color:var(--brand)]">Properties</Link>
-              <Link href="/agents" className="hover:text-[color:var(--brand)]">Agents</Link>
-              <Link href="/about" className="hover:text-[color:var(--brand)]">About Us</Link>
-              <Link href="/contact" className="hover:text-[color:var(--brand)]">Contact</Link>
+              <Link href="/properties" className="link-hover">Properties</Link>
+              <Link href="/agents" className="link-hover">Agents</Link>
+              <Link href="/about" className="link-hover">About Us</Link>
+              <Link href="/contact" className="link-hover">Contact</Link>
             </div>
           </div>
           <div>

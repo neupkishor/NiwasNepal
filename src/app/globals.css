@@ -54,6 +54,32 @@ a {
   text-decoration: none;
 }
 
+.link-hover {
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.link-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 2px;
+  background: var(--brand);
+  transition: width 0.2s ease;
+}
+
+.link-hover:hover {
+  transform: translateY(-2px);
+  color: var(--brand);
+}
+
+.link-hover:hover::after {
+  width: 100%;
+}
+
 .container {
   width: min(1140px, calc(100% - 2.5rem));
   margin-inline: auto;

@@ -6,6 +6,7 @@ const links = [
   { href: "/properties", label: "Properties" },
   { href: "/about", label: "About" },
   { href: "/agents", label: "Agents" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -24,17 +25,18 @@ export default function Header() {
 
         <nav className="hidden items-center gap-7 text-[15px] font-semibold text-[color:var(--muted)] md:flex">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-[color:var(--brand)]">
+            <Link
+              key={link.href}
+              href={link.href}
+              className="link-hover"
+            >
               {link.label}
             </Link>
           ))}
-          <Link href="/contact" className="btn btn-primary text-sm">
-            Book A Viewing
-          </Link>
         </nav>
 
-        <Link href="/contact" className="btn btn-primary text-sm md:hidden">
-          Contact
+        <Link href="/contact" className="btn btn-primary text-sm">
+          Book A Viewing
         </Link>
       </div>
     </header>
