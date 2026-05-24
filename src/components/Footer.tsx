@@ -15,10 +15,10 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold uppercase tracking-[0.16em] text-[color:var(--muted)]">Explore</h4>
             <div className="mt-4 flex flex-col gap-2 text-[15px]">
-              <Link href="/properties" className="link-hover">Properties</Link>
-              <Link href="/agents" className="link-hover">Agents</Link>
-              <Link href="/about" className="link-hover">About Us</Link>
-              <Link href="/contact" className="link-hover">Contact</Link>
+              <Link href="/properties" className="link-hover self-start">Properties</Link>
+              <Link href="/agents" className="link-hover self-start">Agents</Link>
+              <Link href="/about" className="link-hover self-start">About Us</Link>
+              <Link href="/contact" className="link-hover self-start">Contact</Link>
             </div>
           </div>
           <div>
@@ -26,12 +26,12 @@ export default function Footer() {
             <div className="mt-4 space-y-2 text-[15px] text-[color:var(--muted)]">
               <p>Kathmandu, Nepal</p>
               <p>
-                <a className="link-hover" href="tel:+97715550100">
+                <a className="link-hover self-start" href="tel:+97715550100">
                   +977-1-555-0100
                 </a>
               </p>
               <p>
-                <a className="link-hover" href="mailto:info@niwasnepal.com">
+                <a className="link-hover self-start" href="mailto:info@niwasnepal.com">
                   info@niwasnepal.com
                 </a>
               </p>
