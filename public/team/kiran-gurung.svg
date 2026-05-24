@@ -1,0 +1,6 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="40" fill="#F4E7D6"/>
+  <circle cx="200" cy="160" r="78" fill="#CFA982"/>
+  <path d="M72 350C88 280 138 240 200 240C262 240 312 280 328 350" fill="#CFA982"/>
+  <text x="200" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#5A3C21">KG</text>
+</svg>
