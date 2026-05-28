@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container flex h-[var(--header-height)] items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-12 w-12 overflow-hidden rounded-xl border border-[color:var(--line)] bg-white p-1 shadow-sm">
-            <Image src="/logo.jpeg" alt="Niwas Nepal" fill className="object-contain" priority />
+            <Image src="https://neupgroup.com/niwas/logo.jpeg" alt="Niwas Nepal" fill className="object-contain" priority />
           </div>
           <div>
             <p className="font-serif text-xl leading-tight text-[color:var(--foreground)]">Niwas Nepal</p>
